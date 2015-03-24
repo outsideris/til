@@ -4,8 +4,9 @@
 
 ### max - 최대값 찾기
 
-특정 필드의 값에서 최대 값을 찾아야 하는 경우가 있는데, 
-이런 경우는 [max](https://github.com/kriskowal/q/wiki/API-Reference#promisenodeifycallback) 함수를 활용하면 된다.
+특정 필드의 값에서 최대 값을 찾아야 하는 경우가 있는데, 이런 경우는 
+[max](http://docs.sequelizejs.com/en/latest/docs/models/#max-get-the-greatest-value-of-a-specific-attribute-within-a-specific-table) 
+함수를 활용하면 된다.
 
 ```javascript
 // insertVersion 필드에서 최대값 찾기
