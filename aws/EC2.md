@@ -16,3 +16,20 @@ ELB 를 활용하면, 간단하게 무중단으로 런타임 환경이 다른 �
 - http://www.slideshare.net/awskr/aws-kr-ug-1
 - http://www.slideshare.net/awskr/aws-kr-ug-1-aws
 - http://www.slideshare.net/serialxnet/kgc2013-1?qid=6a8cdf77-7570-4c91-93b9-0123d8823e74&v=default&b=&from_search=9
+
+# AWS EC2 Auto Scale-Up 하기 
+
+현재는 EC2 2개 + ELB 로 운영 하고 있지만 기본적으로 EC2 인스턴스는 그룹으로 관리를 하고, 
+그룹 단위로는 기본적인 Scale-Up + ELB 셋팅을 하는 것이 좋을 것 같다. 
+이렇게 관리를 하면 나중에 Zone 단위의 EC2 환경 확장이 용이할 뿐만 아니라, 트래픽 분산 및 폭증에 유연하게 대응할 수 있기 때문이다.
+
+EC2 의 Scale-Up 기능 적용을 위해서는 아래의 작업 절차를 수행해야 한다.
+
+1. AWS Auto Scaling Command Line Tools 를 설치한다.
+2. 환경변수를 설정한다.
+3. Launch Configuration 생성한다.
+4. Auto Scaling Group 생성한다.
+5. Policy 생성한다.
+6. Cloud Watch 를 활용해서 Trigger 설정한다.
+
+… 테스트 후 추가 ...
