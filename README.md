@@ -1,2 +1,2 @@
-Today I learned
+Today We learned
 --------------
